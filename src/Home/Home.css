@@ -1,0 +1,138 @@
+body{
+    width: 100%;
+    /* position: fixed; */
+}
+
+.inputHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+
+.inputHolder label{
+    display: flex;
+    justify-content: flex-start;
+    font-weight:1000;
+    color: #ff7582;
+    z-index: 1000000;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+
+.inputHolder input[type="text"]{
+  margin-bottom: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-style: none;
+  border: none;
+  border-bottom: 1px black solid;
+  outline: none;
+  width: 250px;
+  height: 30px;
+  transition: 100ms;
+  color: aqua;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.inputHolder input[type="text"]::placeholder{
+  color: brown;
+  font-weight: 550;
+  font-size: 13px;
+  user-select: none;
+}
+
+.inputHolder input[type="text"]:hover{
+    backdrop-filter: none;
+}
+
+.inputHolder input[type="text"]:focus{
+  outline: none;
+  border: none;
+  color: darkorchid;
+  border-bottom: 5px solid aqua;
+  border-radius: 5px;
+}
+
+
+button{
+    margin-bottom: 20px;
+    width: 170px;
+    height: 25px;
+    justify-content: center;
+    border: none;
+    background-color: 2px solid #1F2D6B;
+    outline: #222034 solid 1px;
+    border-color: transparent;
+    background-image: url(/img/Sprite-0002.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 300ms;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px auto 30px auto;
+}
+
+button:hover{
+    outline: 5px solid black;
+    /* border: none;  */
+    background-image: url(/img/Sprite-000v.gif);
+}
+
+button:focus{
+    /* outline: 5px solid black; */
+    /* border: none; */
+}
+
+
+.positionCome{
+    position: fixed;
+    left: 15%;
+    bottom: 70%;
+    z-index: 700;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    /* height: 100vh; */
+    left: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+    padding: 60px;
+    z-index: 1000000;
+    pointer-events: none;
+}
+
+
+
+.gorbe{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    /* background-color: red; */
+    background-image: url(/img/gorbe.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* animation: 1s linear gorbeann infinite; */
+    z-index: 1000000;
+}
+
+@media only screen and (max-width: 1366px) {
+    .positionCome{
+        display: none;
+    }
+
+
+}

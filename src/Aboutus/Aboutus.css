@@ -1,0 +1,26 @@
+.pPosition{
+    margin-top: 20%;
+    margin-left: 20%;
+    display: block;
+    float: left;     
+    z-index: 100;
+    
+}
+
+.pPosition a{
+    font-family: Arial, Helvetica, sans-serif;    
+    text-decoration: underline;
+    color: blue;
+}
+
+.pPosition .sA{
+    font-family: Arial, Helvetica, sans-serif;    
+    text-decoration: dotted;
+    color: #590404; 
+}
+
+
+.pPosition a:hover{
+    text-decoration: none;
+    color: blue;
+}
