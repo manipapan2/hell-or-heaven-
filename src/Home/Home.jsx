@@ -34,15 +34,15 @@ export default function Home(){
      nameValue === 'farhad' && lastNameValue === 'gholami'  )
      {
         // navigate("/heaven")
-        console.log("heaven")
+        navigate("/heaven");
     }
 
     else if(nameValue === 'arshia' ){
-        console.log("hell")
+        navigate("/hell");
     }
 
     else if( nameValue === 'd42MEM$%(asd3323d$1sad&@DJ' && lastNameValue === 'dfj^&$(3245'){
-        window.location = 'https://manipapan2.github.io/hell-or-heaven-/crashexo.html'
+        navigate("/crashexo");
     }
 
 
