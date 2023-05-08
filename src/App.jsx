@@ -15,7 +15,7 @@ export default function App() {
           path="/"
           element={
             <>
-              <NavigationBar />
+              <NavigationBar hclass="selected"/>
               <Home />
             </>
           }
@@ -24,7 +24,7 @@ export default function App() {
           path="/aboutus"
           element={
             <>
-              <NavigationBar />
+              <NavigationBar aclass="selected"/>
               <About />
             </>
           }
@@ -33,7 +33,7 @@ export default function App() {
           path="/Hell"
           element={
             <>
-              <NavigationBar />
+              <NavigationBar hellclass="selected"/>
               <Hell />
             </>
           }
@@ -42,7 +42,7 @@ export default function App() {
           path="/Heaven"
           element={
             <>
-              <NavigationBar />
+              <NavigationBar heavenclass="selected"/>
               <Heaven />
             </>
           }

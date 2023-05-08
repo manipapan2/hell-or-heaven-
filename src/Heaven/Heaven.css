@@ -1,0 +1,11 @@
+.bali{
+    position: absolute;
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url("/img/balii.gif");
+    /* background-image: url("/img/bal.png"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

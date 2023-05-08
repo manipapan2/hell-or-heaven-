@@ -102,17 +102,36 @@ nav a:hover{
 }
 
 .myImage3{
+    position: relative;
     width: 500px;
     height: 500px;
     /* background-image: url(/img/myphoto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
-    background-color: green;
+    background-color: black;
     border-radius: 20%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     box-shadow: 0px 0px 20px 20px rgb(196, 0, 196);
     z-index: 100;
+    align-items: center;
+}
+
+.myImage3 p{
+    display: flex;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    /* height: 100%; */
+}
+
+.selected{
+    color: #00E0C6;
+    background-color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px pink;
+    z-index: -1111;
 }
