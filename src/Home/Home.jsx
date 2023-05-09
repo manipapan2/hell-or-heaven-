@@ -107,10 +107,10 @@ export default function Home(){
     )
 }
 
-// setInterval(() => {
-//     const time = new Date()
-//     console.log(time)
-// }, 1000);
+setInterval(() => {
+    const time = new Date()
+    console.log(time)
+}, 1000);
 
 let times = setInterval(() => {
     const time = new Date()
