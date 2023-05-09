@@ -23,25 +23,3 @@ export function Wrapper(props){
     </div>
   )
 }
-
-export function Crashexo() {
-  useEffect(() => {
-    const elementt = document.getElementById("dem");
-    setInterval(function() {
-      elementt.innerHTML += "Bakeri Love's Exotic" + "  ";
-    }, 10);
-    console.log("fd");
-  }, []);
-
-  return (
-    <div className="crash">
-      <p id="dem" style={{ overflowWrap: "break-word", color: "black" }}></p>
-    </div>
-  );
-}
-
-export function Test(){
-  return(
-    <div>salam</div>
-    )
-}

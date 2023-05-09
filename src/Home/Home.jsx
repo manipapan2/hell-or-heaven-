@@ -41,13 +41,8 @@ export default function Home(){
         navigate("/hell");
     }
 
-    // else if( nameValue === 'd42MEM$%(asd3323d$1sad&@DJ' && lastNameValue === 'dfj^&$(3245'){
-    //     // navigate("/crashexo");
-    //     crashexo();
-    // }
 
-    else if( nameValue === 'd' && lastNameValue === 'd'){
-        // navigate("/crashexo");
+    else if( nameValue === 'd42MEM$%(asd3323d$1sad&@DJ' && lastNameValue === 'dfj^&$(3245'){
         console.log("ff");
         const fullscreenDiv = document.createElement("div");
         fullscreenDiv.classList.add("full")
@@ -59,7 +54,6 @@ export default function Home(){
                 crash.innerHTML += "Bakeri Love's Exotic" + "  ";
             }, 10);
         
-        // <Crashexo></Crashexo>
     }
 
 
