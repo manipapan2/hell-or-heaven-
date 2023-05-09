@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from "react";
-import { Test,Crashexo, Wrapper } from '../Cumponents/Cumponents';
+import { Wrapper } from '../Cumponents/Cumponents';
 import "./Home.css"
 
 
