@@ -4,7 +4,6 @@ import About from "./Aboutus/Aboutus"
 import Hell from "./Hell/Hell"
 import Heaven from "./Heaven/Heaven"
 import NavigationBar from "./Cumponents/Cumponents"
-import Crashexo from "./Crashexo/Crashexo";
 
 
 export default function App() {
