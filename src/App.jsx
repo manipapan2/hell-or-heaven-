@@ -47,7 +47,6 @@ export default function App() {
             </>
           }
         />
-        <Route path="/crashexo" element={<Crashexo />} />
       </Routes>
     </Router>
   );

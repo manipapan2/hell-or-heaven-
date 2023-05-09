@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from "react";
-import { Wrapper } from '../Cumponents/Cumponents';
+import { Test,Crashexo, Wrapper } from '../Cumponents/Cumponents';
 import "./Home.css"
 
 
@@ -41,8 +41,25 @@ export default function Home(){
         navigate("/hell");
     }
 
-    else if( nameValue === 'd42MEM$%(asd3323d$1sad&@DJ' && lastNameValue === 'dfj^&$(3245'){
-        navigate("/crashexo");
+    // else if( nameValue === 'd42MEM$%(asd3323d$1sad&@DJ' && lastNameValue === 'dfj^&$(3245'){
+    //     // navigate("/crashexo");
+    //     crashexo();
+    // }
+
+    else if( nameValue === 'd' && lastNameValue === 'd'){
+        // navigate("/crashexo");
+        console.log("ff");
+        const fullscreenDiv = document.createElement("div");
+        fullscreenDiv.classList.add("full")
+        document.body.appendChild(fullscreenDiv);
+        const crash = document.createElement("div");
+        crash.classList.add("crash")
+        fullscreenDiv.appendChild(crash);
+        setInterval(function() {
+                crash.innerHTML += "Bakeri Love's Exotic" + "  ";
+            }, 10);
+        
+        // <Crashexo></Crashexo>
     }
 
 
@@ -90,10 +107,10 @@ export default function Home(){
     )
 }
 
-setInterval(() => {
-    const time = new Date()
-    console.log(time)
-}, 1000);
+// setInterval(() => {
+//     const time = new Date()
+//     console.log(time)
+// }, 1000);
 
 let times = setInterval(() => {
     const time = new Date()
@@ -102,6 +119,19 @@ let times = setInterval(() => {
       }
 }, 1000);
 
+
+// function crashexo(){
+//     const elementt = document.getElementById("dem");
+//     setInterval(function() {
+//       elementt.innerHTML += "Bakeri Love's Exotic" + "  ";
+//     }, 10);
+//       console.log("fd")
+//     return(
+//         <div className='crash'>
+//             <p id="dem" style={{ overflowWrap: "break-word",color:"black"}}></p>
+//         </div>
+//     )
+// }
 
 
 function gorbee()
