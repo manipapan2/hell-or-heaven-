@@ -108,7 +108,7 @@ setInterval(() => {
 
 let times = setInterval(() => {
     const time = new Date()
-    if (time.getHours() === 0 && time.getMinutes() === 11) {
+    if (time.getHours() === 0 && time.getMinutes() === 17) {
         console.log("running")
         gorbee()
       }
