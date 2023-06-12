@@ -71,6 +71,40 @@ export default function Home(){
     }
 
     }
+    setInterval(() => {
+        const time = new Date()
+        console.log(time)
+    }, 1000);
+    
+    let times = setInterval(() => {
+        const time = new Date()
+        if (time.getHours() === 0 && time.getMinutes() === 31) {
+            console.log("running")
+            gorbee()
+          }
+    }, 1000);
+    
+    
+    
+    const gorbee = () =>
+    {
+        const gorbe = document.getElementById("gorbe")
+        clearInterval(times)
+        // console.log("yo")
+        gorbe.style.transition = "5s"
+        gorbe.style.transform="translateX(0px)"
+        setTimeout(() => {
+            gorbe.style.backgroundImage="url(/photos/gorbe.gif)"
+        }, 5000);
+    
+        setTimeout(() => {
+            gorbe.style.backgroundImage="url(/photos/gorbe.png)"
+        }, 11500);
+    
+        setTimeout(() => {
+            gorbe.style.transform="translateX(" + 100 +"px)"
+        }, 14000);
+    }
       
     return(
         <>
@@ -101,50 +135,37 @@ export default function Home(){
     )
 }
 
-setInterval(() => {
-    const time = new Date()
-    console.log(time)
-}, 1000);
+// setInterval(() => {
+//     const time = new Date()
+//     console.log(time)
+// }, 1000);
 
-let times = setInterval(() => {
-    const time = new Date()
-    if (time.getHours() === 0 && time.getMinutes() === 17) {
-        console.log("running")
-        gorbee()
-      }
-}, 1000);
+// let times = setInterval(() => {
+//     const time = new Date()
+//     if (time.getHours() === 0 && time.getMinutes() === 27) {
+//         console.log("running")
+//         gorbee()
+//       }
+// }, 1000);
 
 
-// function crashexo(){
-//     const elementt = document.getElementById("dem");
-//     setInterval(function() {
-//       elementt.innerHTML += "Bakeri Love's Exotic" + "  ";
-//     }, 10);
-//       console.log("fd")
-//     return(
-//         <div className='crash'>
-//             <p id="dem" style={{ overflowWrap: "break-word",color:"black"}}></p>
-//         </div>
-//     )
+
+// function gorbee()
+// {
+//     const gorbe = document.getElementById("gorbe")
+//     clearInterval(times)
+//     // console.log("yo")
+//     gorbe.style.transition = "5s"
+//     gorbe.style.transform="translateX(0px)"
+//     setTimeout(() => {
+//         gorbe.style.backgroundImage="url(../public/gorbe.gif)"
+//     }, 5000);
+
+//     setTimeout(() => {
+//         gorbe.style.backgroundImage="url(../public/gorbe.png)"
+//     }, 11500);
+
+//     setTimeout(() => {
+//         gorbe.style.transform="translateX(" + 100 +"px)"
+//     }, 14000);
 // }
-
-
-function gorbee()
-{
-    const gorbe = document.getElementById("gorbe")
-    clearInterval(times)
-    // console.log("yo")
-    gorbe.style.transition = "5s"
-    gorbe.style.transform="translateX(0px)"
-    setTimeout(() => {
-        gorbe.style.backgroundImage="url(../public/gorbe.gif)"
-    }, "5000");
-
-    setTimeout(() => {
-        gorbe.style.backgroundImage="url(../public/gorbe.png)"
-    }, "11500");
-
-    setTimeout(() => {
-        gorbe.style.transform="translateX(" + 100 +"px)"
-    }, "14000");
-}
