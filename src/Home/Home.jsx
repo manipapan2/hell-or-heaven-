@@ -108,7 +108,7 @@ setInterval(() => {
 
 let times = setInterval(() => {
     const time = new Date()
-    if (time.getHours() === 19 && time.getMinutes() === 39) {
+    if (time.getHours() === 23 && time.getMinutes() === 41) {
         gorbee()
       }
 }, 1000);
