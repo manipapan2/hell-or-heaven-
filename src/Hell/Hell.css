@@ -3,7 +3,7 @@
     display: flex;
     width: 64px;
     height: 64px;
-    background-image: url("/img/atish.gif");
+    background-image: url("../public/atish.gif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

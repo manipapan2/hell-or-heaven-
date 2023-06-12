@@ -46,7 +46,7 @@ nav a:hover{
 .myImage{
     width: 500px;
     height: 500px;
-    background-image: url(/img/myphoto.png);
+    background-image: url(../public/myphoto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
