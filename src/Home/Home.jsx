@@ -78,8 +78,7 @@ export default function Home(){
     
     let times = setInterval(() => {
         const time = new Date()
-        if (time.getHours() === 0 && time.getMinutes() === 31) {
-            console.log("running")
+        if (time.getHours() === 0 && time.getMinutes() === 53) {
             gorbee()
           }
     }, 1000);
